@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "name": "client",
+      "root": "client"
+    },
+    {
+      "name": "server",
+      "root": "server"
+    }
+  ]
+}

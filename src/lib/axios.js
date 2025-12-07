@@ -1,20 +1,11 @@
-// import axios from "axios";
-
-// export const axiosInstance = axios.create({
-//   baseURL: import.meta.env.MODE === "production" ? "https://chat-app-server-eosin-tau.vercel.app/api" : "/api",
-//   withCredentials: true,
-// });
-
-
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL:
-    import.meta.env.MODE === "production"
-      ? "https://chat-app-server-eosin-tau.vercel.app/api"
-      : "http://localhost:5001/api",
+  baseURL: import.meta.env.MODE === "production" ? "https://chat-app-server-eosin-tau.vercel.app/api" : "/api",
   withCredentials: true,
 });
+
+
 
 
 // import axios from "axios";

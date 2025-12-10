@@ -3,7 +3,9 @@ import { axiosInstance } from "../lib/axios.js";
 import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
-const BASE_URL = import.meta.env.MODE === "producation" ? "https://chat-app-server-eosin-tau.vercel.app/api" : "/";
+
+const BASE_URL = import.meta.env.MODE === "production" ? "http://localhost:5001" : "/";
+
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
